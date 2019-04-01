@@ -1,0 +1,20 @@
+{
+  "generator-plugin-wp": {
+    "name": "hack4cause",
+    "homepage": "https://mcnichols.design",
+    "description": "A new plugin to solve a challenge for our local community @ hack4acause",
+    "version": "0.0.1",
+    "author": "Team Dumpster Fire",
+    "authoremail": "allen@mcnichols.design",
+    "authorurl": "https://mcnichols.design",
+    "license": "GPLv2",
+    "slug": "hack4cause",
+    "classname": "Hack4cause",
+    "mainclassname": "Hack4cause",
+    "classprefix": "H4_",
+    "prefix": "hack4cause",
+    "year": 2019,
+    "currentVersionWP": "4.8.1",
+    "plugingenversion": "0.20.2"
+  }
+}

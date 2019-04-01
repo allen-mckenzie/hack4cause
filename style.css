@@ -1,0 +1,3 @@
+.menu-icon-h4-hack4cause-menu > a > .dashicons-before.dashicons-heart::before {
+    color: #f00 !important;
+}

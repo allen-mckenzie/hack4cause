@@ -105,6 +105,14 @@ final class Hack4cause {
 	protected $hack4cause_menu;
 
 	/**
+	 * Instance of H4_Hack4cause_Methods
+	 *
+	 * @since0.0.1
+	 * @var H4_Hack4cause_Methods
+	 */
+	protected $hack4cause_methods;
+
+	/**
 	 * Creates or returns an instance of this class.
 	 *
 	 * @since   0.0.1
@@ -137,6 +145,7 @@ final class Hack4cause {
 	public function plugin_classes() {
 
 		$this->hack4cause_menu = new H4_Hack4cause_Menu( $this );
+		$this->hack4cause_methods = new H4_Hack4cause_Methods( $this );
 	} // END OF PLUGIN CLASSES FUNCTION
 
 	/**
@@ -194,6 +203,7 @@ final class Hack4cause {
 		wp_register_style( 'hack4causeStylesheet', plugins_url( 'style.css', __FILE__ ) );
 		wp_enqueue_style( 'hack4causeStylesheet' );
 		include 'includes/class-hack4cause-menu.php';
+		include 'includes/class-hack4cause-methods.php';
 		// Initialize plugin classes.
 		$this->plugin_classes();
 	}
@@ -295,6 +305,7 @@ final class Hack4cause {
 			case 'url':
 			case 'path':
 			case 'hack4cause_menu':
+			case 'hack4cause_methods':
 				return $this->$field;
 			default:
 				throw new Exception( 'Invalid ' . __CLASS__ . ' property: ' . $field );

@@ -1,6 +1,6 @@
 {
     "require": {
-        "webdevstudios/cmb2": "^2.6",
-        "webdevstudios/cpt-core": "^1.0"
+        "webdevstudios/cpt-core": "^1.0",
+        "cmb2/cmb2": "^2.6"
     }
 }

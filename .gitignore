@@ -76,3 +76,22 @@ node_modules
 # Other, add your own ignored things here.
 .idea/
 release
+
+
+# WordPress
+.bowerrc
+.editorconfig
+.sass-lint.yml
+.travis.yml
+bower.json
+composer.json
+composer.lock
+Dockunit.json
+Gruntfile.js
+Gulpfile.js
+package.json
+phpcs.xml
+phpunit.xml
+test/**
+bin/**
+repo/**
